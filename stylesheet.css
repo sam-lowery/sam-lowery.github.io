@@ -10,49 +10,16 @@ height: 100px;
 h1{
   color: white;
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
-  font-style: italic;
   font-size: 40px;
   display: inline;
   float: left;
 }
 
-h2{
+h2 {
   color: white;
   font-family: "Comic Sans";
   font-size: 50px;
   display: block;
-}
-
-h3{
-  color: white;
-  font-family: "Comic Sans";
-  font-size: 36px;
-  display: block;
-}
-
-p{
-  font-size: 24px;
-  color: white;
-}
-
-form{
-  color: white;
-}
-
-td{
-  color: white;
-}
-
-input[type=submit]{
-  background-color: #280138;
-  border: 4 white;
-  border-color: white;
-  border-radius: 4px;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 
 #page-container {
@@ -72,114 +39,3 @@ input[type=submit]{
   background-color: black;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-  color: white;
-  background-color: #280138;
-  border-radius: 4px;
-  outline: none;
-  table-layout: fixed;
-}
-
-.button:hover{
-  background-color: #3A0A4E;
-  color: white;
-}
-
-.button1{
-  width: 50%;
-  height: 25%;
-}
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar a.active {
-  background-color: #280138;
-  color: white;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: white;
-  color: black;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Dropdown Links */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Background for dropdown links when hovered on */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Displays dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 31.7%;
-  padding: 10px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
