@@ -1,12 +1,14 @@
+h2{
+  font-size: 80px;
+  color: white;
+}
+
 body {
   background-color: black;
   padding: 0;
   margin: 0;
-}
-
-header{
-  background-color: white;
-  height: 80px;
+  height: available;
+  width: available;
 }
 
 .left_sidenav{
@@ -16,9 +18,7 @@ header{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: white; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  background-color: white;
 }
 
 .right_sidenav{
@@ -28,15 +28,13 @@ header{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: white; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  background-color: white;
 }
 
 .navigation-bar {
   height: 80px; /* change it to desired width */
   background-color: white; /* change to desired color */
-  padding-left: 40px;
+  padding-left: 2.5%;
 }
 
 .logo {
@@ -52,7 +50,7 @@ header{
   font-family: "Brush Script MT", Brush Script Std, cursive;
   font-size: 34px;
   display: inline-block;
-  margin-right: 55.5%;
+  margin-right: 50%;
   padding-left: 2.5%;
   line-height: 70%;
 }
@@ -63,6 +61,8 @@ header{
   margin-right: 70px;
   height: 80px;        /* if you want it to take the full height of the bar */
   line-height: 80px;    /* if you want it vertically middle of the navbar */
+  font-family: "Bahnschrift SemiBold";
+  font-size: 20px;
 }
 
 .social-button {
@@ -70,8 +70,80 @@ header{
   vertical-align: top;
   width: 30px;
   height: 28px;
-  margin-top: 25px;    /* if you want it vertically middle of the navbar. */
+  margin-top: 1.75%;    /* if you want it vertically middle of the navbar. */
 }
+
+.fade-in-image {
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+  -ms-animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.animate span{
+  display: block;
+  position: relative;
+  margin-left: 20%;
+}
+
+.animate.mixed > span:nth-child(even){
+  animation: animateBackwards 1s ease-in-out
+  forwards;
+}
+.animate.mixed > span:nth-child(odd){
+  animation: animateForwards 1s ease-in-out
+  forwards;
+}
+
+@keyframes animateForwards {
+  from {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    top: .9em;
+    transform: rotate(-15deg);
+  }
+}
+@keyframes animateBackwards {
+  from {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    top: 1em;
+    transform: rotate(25deg);
+  }
+}
+
+
 
 
 
