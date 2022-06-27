@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
         <link rel="stylesheet" href="stylesheet.css">
         <script src="../code.js"></script>
         <link rel="icon" href="../Images/SL_Logo.jpg">
@@ -27,7 +27,7 @@
     </nav>
 
     <div style="float: left">
-        <h2 style="display:inline-block; padding-top:7.5%; padding-left: 23%;">
+        <h2 style="position: absolute; padding-top:7.5%; padding-left: 7.5%;">
             |CONTACT<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspME|</h2>
     </div>
 
@@ -36,22 +36,30 @@
 
             <div style="float:left;margin-right:20px;">
                 <label for="fname">First Name</label>
-                <input id="fname" type="text" name="fname" placeholder="Your first name...">
+                <input id="fname" type="text" name="fname" placeholder="Your first name..."
+                       required oninvalid="this.setCustomValidity('First name is required')"
+                       oninput="this.setCustomValidity('')">
             </div>
 
             <div style="float:left;">
                 <label for="lname">Last Name</label>
-                <input id="lname" type="text" name="lname" placeholder="Your last name...">
+                <input id="lname" type="text" name="lname" placeholder="Your last name..."
+                       required oninvalid="this.setCustomValidity('Last name is required')"
+                       oninput="this.setCustomValidity('')">
             </div>
 
             <br style="clear:both;" />
 
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Your email address...">
+            <input id="email" type="email" name="email" placeholder="Your email address..."
+                   required  oninvalid="this.setCustomValidity('Email is required')"
+                   oninput="this.setCustomValidity('')">
 
             <label for="message">Message</label>
             <textarea id="message" type="text" name="message"
-                      placeholder="What would you like to say? Inquiries are restricted to 2500 characters."></textarea>
+                      placeholder="What would you like to say? Inquiries are restricted to 2500 characters."
+                      required oninvalid="this.setCustomValidity('Message is required')"
+                      oninput="this.setCustomValidity('')"></textarea>
 
             <input type="submit" value="Submit">
         </form>
